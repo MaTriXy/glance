@@ -1,0 +1,159 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "Glance-arm64-apple-macosx15.0-debug.module": ["<Glance-arm64-apple-macosx15.0-debug.module>"]
+  "GlanceCLI-arm64-apple-macosx15.0-debug.module": ["<GlanceCLI-arm64-apple-macosx15.0-debug.module>"]
+  "GlanceDemo-arm64-apple-macosx15.0-debug.exe": ["<GlanceDemo-arm64-apple-macosx15.0-debug.exe>"]
+  "GlanceDemo-arm64-apple-macosx15.0-debug.module": ["<GlanceDemo-arm64-apple-macosx15.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "glance-arm64-apple-macosx15.0-debug.exe": ["<glance-arm64-apple-macosx15.0-debug.exe>"]
+  "main": ["<Glance-arm64-apple-macosx15.0-debug.module>","<GlanceCLI-arm64-apple-macosx15.0-debug.module>","<GlanceDemo-arm64-apple-macosx15.0-debug.exe>","<GlanceDemo-arm64-apple-macosx15.0-debug.module>","<glance-arm64-apple-macosx15.0-debug.exe>"]
+  "test": ["<Glance-arm64-apple-macosx15.0-debug.module>","<GlanceCLI-arm64-apple-macosx15.0-debug.module>","<GlanceDemo-arm64-apple-macosx15.0-debug.exe>","<GlanceDemo-arm64-apple-macosx15.0-debug.module>","<glance-arm64-apple-macosx15.0-debug.exe>"]
+default: "main"
+nodes:
+  "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceCLI/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo":
+    is-mutated: true
+  "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance":
+    is-mutated: true
+commands:
+  "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/AccessibilityReader.swift","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/Glance.swift","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/JSONOutput.swift","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/PromptFormatter.swift","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/ScreenState.swift"]
+    outputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/sources"]
+    description: "Write auxiliary file /Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/sources"
+
+  "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceCLI/main.swift"]
+    outputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/sources"]
+    description: "Write auxiliary file /Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/sources"
+
+  "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo-entitlement.plist"]
+    description: "Write auxiliary file /Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo-entitlement.plist"
+
+  "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/App.swift","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/Components.swift","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/ContentView.swift","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/Theme.swift"]
+    outputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/sources"]
+    description: "Write auxiliary file /Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/sources"
+
+  "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/AccessibilityReader.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/JSONOutput.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/PromptFormatter.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/ScreenState.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/App.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Components.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/ContentView.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Theme.swift.o"]
+    outputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.product/Objects.LinkFileList"
+
+  "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance-entitlement.plist"]
+    description: "Write auxiliary file /Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance-entitlement.plist"
+
+  "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/AccessibilityReader.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/JSONOutput.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/PromptFormatter.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/ScreenState.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/main.swift.o"]
+    outputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance.product/Objects.LinkFileList"
+
+  "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<Glance-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/AccessibilityReader.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/JSONOutput.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/PromptFormatter.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/ScreenState.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/Glance.swiftmodule"]
+    outputs: ["<Glance-arm64-apple-macosx15.0-debug.module>"]
+
+  "<GlanceCLI-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/main.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/GlanceCLI.swiftmodule"]
+    outputs: ["<GlanceCLI-arm64-apple-macosx15.0-debug.module>"]
+
+  "<GlanceDemo-arm64-apple-macosx15.0-debug.exe>":
+    tool: phony
+    inputs: ["<GlanceDemo-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    outputs: ["<GlanceDemo-arm64-apple-macosx15.0-debug.exe>"]
+
+  "<GlanceDemo-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/App.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Components.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/ContentView.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Theme.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/GlanceDemo.swiftmodule"]
+    outputs: ["<GlanceDemo-arm64-apple-macosx15.0-debug.module>"]
+
+  "<glance-arm64-apple-macosx15.0-debug.exe>":
+    tool: phony
+    inputs: ["<glance-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    outputs: ["<glance-arm64-apple-macosx15.0-debug.exe>"]
+
+  "C.Glance-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/AccessibilityReader.swift","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/Glance.swift","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/JSONOutput.swift","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/PromptFormatter.swift","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/ScreenState.swift","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/sources"]
+    outputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/AccessibilityReader.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/JSONOutput.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/PromptFormatter.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/ScreenState.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/Glance.swiftmodule"]
+    description: "Compiling Swift Module 'Glance' (5 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","Glance","-emit-dependencies","-emit-module","-emit-module-path","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/Glance.swiftmodule","-output-file-map","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/sources","-I","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-enable-batch-mode","-index-store-path","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance-Swift.h","-swift-version","5","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","glance"]
+
+  "C.GlanceCLI-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceCLI/main.swift","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/Glance.swiftmodule","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/sources"]
+    outputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/main.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/GlanceCLI.swiftmodule"]
+    description: "Compiling Swift Module 'GlanceCLI' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","GlanceCLI","-emit-dependencies","-emit-module","-emit-module-path","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/GlanceCLI.swiftmodule","-output-file-map","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/output-file-map.json","-incremental","-c","@/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/sources","-I","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-enable-batch-mode","-index-store-path","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","GlanceCLI_main","-swift-version","5","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","glance"]
+
+  "C.GlanceDemo-arm64-apple-macosx15.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/AccessibilityReader.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/JSONOutput.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/PromptFormatter.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/ScreenState.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/App.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Components.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/ContentView.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Theme.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.product/Objects.LinkFileList"]
+    outputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/GlanceDemo"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug","-o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo","-module-name","GlanceDemo","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_GlanceDemo_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.product/Objects.LinkFileList","-target","arm64-apple-macosx14.0","-framework","AppKit","-framework","ApplicationServices","-Xlinker","-add_ast_path","-Xlinker","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/Glance.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/GlanceDemo.swiftmodule","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.GlanceDemo-arm64-apple-macosx15.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo-entitlement.plist"]
+    outputs: ["<GlanceDemo-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/GlanceDemo"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo-entitlement.plist","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo"]
+
+  "C.GlanceDemo-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/App.swift","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/Components.swift","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/ContentView.swift","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/Theme.swift","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/Glance.swiftmodule","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/sources"]
+    outputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/App.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Components.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/ContentView.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Theme.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/GlanceDemo.swiftmodule"]
+    description: "Compiling Swift Module 'GlanceDemo' (4 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","GlanceDemo","-emit-dependencies","-emit-module","-emit-module-path","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/GlanceDemo.swiftmodule","-output-file-map","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/output-file-map.json","-incremental","-c","@/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/sources","-I","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-enable-batch-mode","-index-store-path","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","GlanceDemo_main","-swift-version","5","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","glance"]
+
+  "C.glance-arm64-apple-macosx15.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/AccessibilityReader.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/JSONOutput.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/PromptFormatter.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/ScreenState.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/main.swift.o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance.product/Objects.LinkFileList"]
+    outputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/glance"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug","-o","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance","-module-name","glance","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_GlanceCLI_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance.product/Objects.LinkFileList","-target","arm64-apple-macosx14.0","-framework","ApplicationServices","-framework","AppKit","-Xlinker","-add_ast_path","-Xlinker","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/Glance.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/GlanceCLI.swiftmodule","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.glance-arm64-apple-macosx15.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance-entitlement.plist"]
+    outputs: ["<glance-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/glance"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance-entitlement.plist","/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceCLI/","/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/","/Users/rishabhsai/Desktop/sandbox/Glance/Package.swift","/Users/rishabhsai/Desktop/sandbox/Glance/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

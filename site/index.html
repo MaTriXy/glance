@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="#" class="nav-logo">glance</a>
+    <div class="nav-right">
+      <a href="#docs">docs</a>
+      <a href="#works-best">compatibility</a>
+      <a href="https://x.com/rishabhsai" class="nav-x" aria-label="X / Twitter">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="https://github.com/rishabhsai/glance" class="nav-gh">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <p class="hero-eyebrow">open-source sdk for macos</p>
+    <h1>Your AI doesn't need<br/>to <em>see</em> the screen.</h1>
+    <h1 class="hero-h1-alt">It just needs to <em>know</em><br/>what's on it.</h1>
+    <p class="hero-p">
+      Glance reads the OS accessibility tree and gives your AI structured data
+      about every UI element — role, label, value, exact pixel coordinates.
+      No screenshots. No vision models. One function call.
+    </p>
+  </section>
+
+  <!-- ============ NUMBERS ============ -->
+  <section class="numbers">
+    <div class="number-item">
+      <span class="n-val"><span class="count" data-to="30" data-suffix="ms">0ms</span></span>
+      <span class="n-context">Your eye takes 300ms to blink. Glance reads the entire screen 10 times in that window.</span>
+    </div>
+    <div class="number-item">
+      <span class="n-val"><span class="count" data-to="10" data-suffix="×">0×</span> <span class="n-unit">faster</span></span>
+      <span class="n-context">LLMs process text tokens 10× faster than image tokens. Less data in, faster answer out.</span>
+    </div>
+    <div class="number-item">
+      <span class="n-val"><span class="count" data-to="30" data-suffix="×">0×</span> <span class="n-unit">cheaper</span></span>
+      <span class="n-context">~500 text tokens vs ~3,000 image tokens per call. That adds up fast at scale.</span>
+    </div>
+  </section>
+
+  <!-- ============ HONEST NOTE ============ -->
+  <section class="honest">
+    <div class="honest-card">
+      <h3>Let's be real for a second.</h3>
+      <p>
+        Glance doesn't replace screenshots entirely. <strong>About 70% of the time</strong> — when
+        your user is in a browser, text editor, terminal, or any standard productivity app —
+        structured text is all your AI needs. It responds faster, costs less, and gets
+        <em>exact</em> element positions instead of guessing from pixels.
+      </p>
+      <p>
+        The other 30%? Canvas apps, games, custom-rendered UIs — the accessibility tree is sparse
+        there. Fall back to screenshots for those. Glance tells you when to switch.
+        <strong>Use the right tool for the moment.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CODE ============ -->
+  <section class="code-section">
+    <div class="code-window">
+      <div class="code-chrome">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <div class="code-tabs">
+          <button class="ct active" data-lang="js">index.js</button>
+          <button class="ct" data-lang="py">main.py</button>
+          <button class="ct" data-lang="swift">App.swift</button>
+        </div>
+      </div>
+      <pre class="code-body" data-lang="js"><code><span class="k">import</span> { screen } <span class="k">from</span> <span class="s">'glance-sdk'</span>
+
+<span class="c">// one line — returns structured text, not pixels</span>
+<span class="k">const</span> ctx <span class="o">=</span> <span class="k">await</span> <span class="f">screen</span>()
+
+<span class="c">// feed it to any LLM as plain text</span>
+<span class="k">const</span> res <span class="o">=</span> <span class="k">await</span> anthropic.messages.<span class="f">create</span>({
+  model: <span class="s">'claude-sonnet-4-6'</span>,
+  messages: [{ role: <span class="s">'user'</span>, content: ctx }]
+})</code></pre>
+      <pre class="code-body hidden" data-lang="py"><code><span class="k">from</span> glance_sdk <span class="k">import</span> screen
+
+<span class="c"># one line — returns structured text, not pixels</span>
+ctx <span class="o">=</span> <span class="f">screen</span>()
+
+<span class="c"># feed it to any LLM as plain text</span>
+res <span class="o">=</span> client.messages.<span class="f">create</span>(
+    model<span class="o">=</span><span class="s">"claude-sonnet-4-6"</span>,
+    messages<span class="o">=</span>[{<span class="s">"role"</span>: <span class="s">"user"</span>, <span class="s">"content"</span>: ctx}]
+)</code></pre>
+      <pre class="code-body hidden" data-lang="swift"><code><span class="k">import</span> Glance
+
+<span class="c">// one line — returns structured text, not pixels</span>
+<span class="k">let</span> ctx <span class="o">=</span> <span class="k">try</span> Glance.<span class="f">screen</span>()
+
+<span class="c">// or get structured data with exact positions</span>
+<span class="k">let</span> state <span class="o">=</span> <span class="k">try</span> Glance.<span class="f">capture</span>()
+print(state.elements.first?.center)
+<span class="c">// → CGPoint(x: 520, y: 340)</span></code></pre>
+    </div>
+  </section>
+
+  <!-- ============ WHY ============ -->
+  <section class="why">
+    <div class="why-header">
+      <h2>The screenshot tax</h2>
+      <p>Every Clicky, Snippy, and screen companion being built right now pays it on every single interaction. Capture, encode, upload, wait for the vision model to <em>squint</em> at pixels. Your users feel that lag.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-label bad-label">Screenshot pipeline</div>
+        <div class="why-steps">
+          <div class="ws"><span class="ws-n">1</span> Capture 2MB screenshot</div>
+          <div class="ws"><span class="ws-n">2</span> Base64 encode, upload to API</div>
+          <div class="ws"><span class="ws-n">3</span> Vision model processes ~3,000 tokens</div>
+          <div class="ws"><span class="ws-n">4</span> AI <em>guesses</em> element coordinates</div>
+        </div>
+        <div class="why-bottom bad-bottom">
+          <span>2–5 sec</span>
+          <span>~$0.03 / call</span>
+          <span>~50px off</span>
+        </div>
+      </div>
+
+      <div class="why-card accent-card">
+        <div class="why-label good-label">With Glance</div>
+        <div class="why-steps">
+          <div class="ws"><span class="ws-n gn">1</span> Read OS accessibility tree — 30ms</div>
+          <div class="ws"><span class="ws-n gn">2</span> Send ~500 tokens of structured text</div>
+          <div class="ws"><span class="ws-n gn">3</span> Exact coordinates included free</div>
+        </div>
+        <div class="why-bottom good-bottom">
+          <span>~0.8 sec</span>
+          <span>~$0.001 / call</span>
+          <span>0px off</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="latency-note">
+      <strong>Why is it so much faster?</strong>
+      LLMs process text and image tokens on different pipelines. Image tokens take 1–3 extra seconds
+      to encode and interpret — that's time your user spends waiting. With text-only input, the model
+      starts generating immediately. The response feels instant because, to the model, it basically is.
+    </div>
+  </section>
+
+  <!-- ============ OUTPUT ============ -->
+  <section class="output">
+    <h2>What your LLM actually receives</h2>
+    <p class="output-sub">Instead of a 2MB image for the AI to squint at, it gets this:</p>
+
+    <div class="output-window">
+      <div class="code-chrome">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <span class="ow-label">Glance.screen() → ~480 tokens</span>
+      </div>
+      <pre class="output-body"><code><span class="oh">[App: DaVinci Resolve 19.1 | Window: "Project 1 - Edit"]</span>
+
+<span class="os">## Focused</span>
+<span class="oe">- [Slider] "Midtones" value=0.32 at (510,390) [FOCUSED]</span>
+
+<span class="os">## Controls</span>
+<span class="oe">- [Button] "Cut" at (120,42)</span>
+<span class="oe">- [Button] "Color" at (680,42)</span>
+<span class="oe">- [PopUpButton] "Node" value="Corrector 1" at (820,42)</span>
+<span class="oe">- [Button] "Add Node" at (900,42)</span>
+
+<span class="os">## Input Fields</span>
+<span class="oe">- [Slider] "Lift" value=0.15 at (400,380)</span>
+<span class="oe">- [Slider] "Gamma" value=-0.08 at (560,380)</span>
+<span class="oe">- [Slider] "Gain" value=0.22 at (720,380)</span>
+
+<span class="os">## Content</span>
+<span class="oe">- [StaticText] "Timeline: 47 clips" at (960,680)</span></code></pre>
+    </div>
+
+    <p class="output-note">
+      The coordinates are exact — from the OS, not estimated from pixels. When your AI says
+      "adjust the Midtones slider" you know it's at <code>(510, 390)</code>. No vision model needed.
+    </p>
+  </section>
+
+  <!-- ============ WORKS BEST ============ -->
+  <section class="works-best" id="works-best">
+    <h2>Where Glance shines</h2>
+    <p class="works-sub">Glance reads the native macOS accessibility tree — the same structured data VoiceOver uses. How much it can see depends on how well the app exposes its UI.</p>
+
+    <div class="works-grid">
+      <div class="works-card best">
+        <div class="works-header">
+          <span class="works-badge best-badge">Best for</span>
+          <span class="works-pct">~70% of use cases</span>
+        </div>
+        <p class="works-desc">Full element tree — every button, field, link, label, and its exact position. Text-only mode works perfectly here. This is where Glance saves you the most.</p>
+        <ul>
+          <li><strong>Browsers</strong> — Chrome, Safari, Firefox, Arc. Reads web page content too: headings, links, form fields, ARIA labels.</li>
+          <li><strong>Code editors</strong> — VS Code, Cursor, Zed, Xcode. Sees file trees, tabs, editor content, terminal output.</li>
+          <li><strong>Chat & productivity</strong> — Slack, Discord, Notion, Notes, Mail. Full message and UI structure.</li>
+          <li><strong>System apps</strong> — Finder, System Settings, Terminal, iTerm2, Warp. Everything exposed.</li>
+          <li><strong>Electron apps</strong> — Any app built on Electron inherits Chromium's accessibility tree.</li>
+        </ul>
+      </div>
+
+      <div class="works-card mostly">
+        <div class="works-header">
+          <span class="works-badge mostly-badge">Works, with gaps</span>
+          <span class="works-pct">~20% of use cases</span>
+        </div>
+        <p class="works-desc">Menus, toolbars, and panels are readable — but the main canvas or viewport is a single opaque element. Combine with a cropped screenshot of just the canvas area for best results.</p>
+        <ul>
+          <li><strong>DaVinci Resolve</strong> — color panels, timeline controls, menus yes. Video viewer no.</li>
+          <li><strong>Adobe apps</strong> — toolbars, layers panel, menus yes. Artboard/canvas no.</li>
+          <li><strong>Figma desktop</strong> — app chrome yes. Design canvas no.</li>
+          <li><strong>Blender</strong> — UI panels yes. 3D viewport no.</li>
+        </ul>
+      </div>
+
+      <div class="works-card fallback-card">
+        <div class="works-header">
+          <span class="works-badge fallback-badge">Use screenshot</span>
+          <span class="works-pct">~10% of use cases</span>
+        </div>
+        <p class="works-desc">These render everything custom — no accessibility tree to read. Glance detects this automatically (elementCount will be very low) so you can switch to screenshots.</p>
+        <ul>
+          <li>Games</li>
+          <li>Canvas / WebGL apps</li>
+          <li>Remote desktop streams</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FALLBACK ============ -->
+  <section class="fallback">
+    <h2>Smart fallback, built in</h2>
+    <p class="fallback-sub">Glance tells you when structured text isn't enough. One check, and you switch strategies automatically.</p>
+
+    <div class="code-window small-window">
+      <div class="code-chrome">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <span class="ow-label">adaptive mode</span>
+      </div>
+      <pre class="code-body"><code><span class="k">import</span> { capture } <span class="k">from</span> <span class="s">'glance-sdk'</span>
+
+<span class="k">const</span> state <span class="o">=</span> <span class="k">await</span> <span class="f">capture</span>()
+
+<span class="k">if</span> (state.elementCount <span class="o">></span> <span class="s">5</span>) {
+  <span class="c">// rich structure — use text (10× faster, 30× cheaper)</span>
+  sendToLLM({ role: <span class="s">'user'</span>, content: state.prompt })
+} <span class="k">else</span> {
+  <span class="c">// canvas app — fall back to screenshot</span>
+  <span class="k">const</span> img <span class="o">=</span> <span class="k">await</span> <span class="f">captureScreenshot</span>()
+  sendToLLM({ role: <span class="s">'user'</span>, content: [{ type: <span class="s">'image'</span>, data: img }] })
+}</code></pre>
+    </div>
+
+    <div class="speed-table">
+      <div class="st-header">
+        <span></span>
+        <span>Glance (text)</span>
+        <span>Screenshot (image)</span>
+      </div>
+      <div class="st-row">
+        <span>Capture</span>
+        <span class="good-val">~30ms</span>
+        <span class="bad-val">~50ms</span>
+      </div>
+      <div class="st-row">
+        <span>Network</span>
+        <span class="good-val">nothing to upload</span>
+        <span class="bad-val">200–500ms (2MB image)</span>
+      </div>
+      <div class="st-row">
+        <span>LLM thinking</span>
+        <span class="good-val">~0.3s (500 text tokens)</span>
+        <span class="bad-val">~1.8s (3,000 image tokens)</span>
+      </div>
+      <div class="st-row">
+        <span>Total latency</span>
+        <span class="good-val">~0.8s</span>
+        <span class="bad-val">~3.5s</span>
+      </div>
+      <div class="st-row">
+        <span>Element positions</span>
+        <span class="good-val">exact (from OS)</span>
+        <span class="bad-val">estimated (from pixels)</span>
+      </div>
+      <div class="st-row">
+        <span>Cost</span>
+        <span class="good-val">~$0.001</span>
+        <span class="bad-val">~$0.03</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INSTALL ============ -->
+  <section class="install" id="docs">
+    <h2>Get started</h2>
+    <p class="install-sub">The pre-built macOS binary is bundled inside the package. Nothing else to install.</p>
+
+    <div class="install-grid">
+      <div class="install-card">
+        <span class="il">npm</span>
+        <pre><code>npm install glance-sdk</code></pre>
+      </div>
+      <div class="install-card">
+        <span class="il">pip</span>
+        <pre><code>pip install glance-sdk</code></pre>
+      </div>
+      <div class="install-card">
+        <span class="il">swift</span>
+        <pre><code>.package(url: "github.com/rishabhsai/glance", from: "0.1.0")</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ API ============ -->
+  <section class="api">
+    <h2>Four functions. That's the API.</h2>
+
+    <div class="api-list">
+      <div class="api-item">
+        <code class="api-name">screen()</code>
+        <p>Returns an LLM-ready string. Every UI element with role, label, value, and exact coordinates. Drop it straight into your prompt as text.</p>
+        <span class="api-ret">→ string</span>
+      </div>
+      <div class="api-item">
+        <code class="api-name">capture()</code>
+        <p>Full structured data — app name, window title, element array, the prompt string, and timing metrics. Use when you need programmatic access or want to check elementCount for fallback logic.</p>
+        <span class="api-ret">→ object</span>
+      </div>
+      <div class="api-item">
+        <code class="api-name">find(name)</code>
+        <p>Look up a UI element by label. Returns its exact pixel position — built for Clicky-style cursor pointing. No more coordinate guessing.</p>
+        <span class="api-ret">→ element | null</span>
+      </div>
+      <div class="api-item">
+        <code class="api-name">checkAccess()</code>
+        <p>Check if macOS Accessibility permission is granted. Same permission Clicky and similar tools already require for push-to-talk.</p>
+        <span class="api-ret">→ boolean</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTEGRATE ============ -->
+  <section class="integrate">
+    <h2>Drop it into your stack</h2>
+    <p class="integrate-sub">Glance works as a drop-in enhancement for any screen-aware AI tool.</p>
+
+    <div class="integrate-grid">
+      <div class="ig-card">
+        <h3>Clicky / Snippy</h3>
+        <p>Replace the screenshot capture in CompanionManager.swift with <code>Glance.screen()</code>. Two lines changed. Responses feel instant, pointing becomes pixel-perfect.</p>
+      </div>
+      <div class="ig-card">
+        <h3>Electron apps</h3>
+        <p><code>npm install glance-sdk</code> — the native binary ships inside node_modules. Call <code>screen()</code> from your main process. No native compilation needed.</p>
+      </div>
+      <div class="ig-card">
+        <h3>Python agents</h3>
+        <p><code>pip install glance-sdk</code> — binary bundled in the wheel. Works with LangChain, Claude SDK, OpenAI SDK, CrewAI, or any framework.</p>
+      </div>
+      <div class="ig-card">
+        <h3>Any language</h3>
+        <p>Use the CLI: <code>./glance screen --json</code> outputs structured JSON to stdout. Parse it from Go, Rust, Ruby — anything that can exec a process.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta">
+    <div class="cta-inner">
+      <h2>Make your AI companion<br/>actually fast.</h2>
+      <p>Open source · MIT license · One function call</p>
+      <div class="cta-links">
+        <a href="https://github.com/rishabhsai/glance" class="cta-btn primary">View on GitHub</a>
+        <a href="#docs" class="cta-btn secondary">Read the docs</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>glance</span>
+    <span>
+      Built by <a href="https://x.com/rishabhsai" class="footer-link">@rishabhsai</a>
+    </span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

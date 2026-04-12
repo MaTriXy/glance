@@ -1,0 +1,29 @@
+{
+  "": {
+    "swift-dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/master.swiftdeps"
+  },
+  "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/App.swift": {
+    "dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/App.d",
+    "object": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/App.swift.o",
+    "swiftmodule": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/App~partial.swiftmodule",
+    "swift-dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/App.swiftdeps"
+  },
+  "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/Components.swift": {
+    "dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Components.d",
+    "object": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Components.swift.o",
+    "swiftmodule": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Components~partial.swiftmodule",
+    "swift-dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Components.swiftdeps"
+  },
+  "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/ContentView.swift": {
+    "dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/ContentView.d",
+    "object": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/ContentView.swift.o",
+    "swiftmodule": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/ContentView.swiftdeps"
+  },
+  "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/Theme.swift": {
+    "dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Theme.d",
+    "object": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Theme.swift.o",
+    "swiftmodule": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Theme~partial.swiftmodule",
+    "swift-dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Theme.swiftdeps"
+  }
+}

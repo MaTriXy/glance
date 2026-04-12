@@ -1,0 +1,787 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Glance-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/sources",
+      "importPath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/AccessibilityReader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/Glance.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/JSONOutput.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/PromptFormatter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/ScreenState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Glance",
+      "moduleOutputPath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/Glance.swiftmodule",
+      "objects" : [
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/AccessibilityReader.swift.o",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance.swift.o",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/JSONOutput.swift.o",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/PromptFormatter.swift.o",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/ScreenState.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance-Swift.h",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "glance"
+      ],
+      "outputFileMapPath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/AccessibilityReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/JSONOutput.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/PromptFormatter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/ScreenState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/Glance.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/AccessibilityReader.swift",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/Glance.swift",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/JSONOutput.swift",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/PromptFormatter.swift",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/ScreenState.swift"
+      ],
+      "tempsPath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.GlanceCLI-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/sources",
+      "importPath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceCLI/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/Glance.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "GlanceCLI",
+      "moduleOutputPath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/GlanceCLI.swiftmodule",
+      "objects" : [
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "GlanceCLI_main",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "glance"
+      ],
+      "outputFileMapPath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/GlanceCLI.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceCLI/main.swift"
+      ],
+      "tempsPath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.GlanceDemo-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/sources",
+      "importPath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/App.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/Components.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/Theme.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/Glance.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "GlanceDemo",
+      "moduleOutputPath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/GlanceDemo.swiftmodule",
+      "objects" : [
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/App.swift.o",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Components.swift.o",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/ContentView.swift.o",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Theme.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "GlanceDemo_main",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "glance"
+      ],
+      "outputFileMapPath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/App.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Components.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Theme.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules/GlanceDemo.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/App.swift",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/Components.swift",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/ContentView.swift",
+        "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/Theme.swift"
+      ],
+      "tempsPath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Glance" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Glance",
+      "-package-name",
+      "glance",
+      "-incremental",
+      "-c",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/AccessibilityReader.swift",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/Glance.swift",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/JSONOutput.swift",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/PromptFormatter.swift",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/ScreenState.swift",
+      "-I",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance-Swift.h",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "glance",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "GlanceCLI" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "GlanceCLI",
+      "-package-name",
+      "glance",
+      "-incremental",
+      "-c",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceCLI/main.swift",
+      "-I",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "GlanceCLI_main",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "glance",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "GlanceDemo" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "GlanceDemo",
+      "-package-name",
+      "glance",
+      "-incremental",
+      "-c",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/App.swift",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/Components.swift",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/ContentView.swift",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/Theme.swift",
+      "-I",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "GlanceDemo_main",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "glance",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Glance" : [
+
+    ],
+    "GlanceCLI" : [
+      "Glance"
+    ],
+    "GlanceDemo" : [
+      "Glance"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/AccessibilityReader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/Glance.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/JSONOutput.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/PromptFormatter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/ScreenState.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/sources"
+    },
+    "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceCLI/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/sources"
+    },
+    "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo-entitlement.plist"
+    },
+    "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/App.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/Components.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/GlanceDemo/Theme.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/sources"
+    },
+    "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/AccessibilityReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/JSONOutput.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/PromptFormatter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/ScreenState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/App.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Components.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.build/Theme.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceDemo.product/Objects.LinkFileList"
+    },
+    "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance-entitlement.plist"
+    },
+    "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/AccessibilityReader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/JSONOutput.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/PromptFormatter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/ScreenState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/GlanceCLI.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/glance.product/Objects.LinkFileList"
+    },
+    "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glance-sdk"
+version = "0.1.0"
+description = "Structured screen understanding for AI apps. Replace screenshots with instant, accurate UI data."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+keywords = ["ai", "screen", "accessibility", "llm", "macos", "agent"]
+classifiers = [
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+]
+
+[tool.setuptools.packages.find]
+include = ["glance_sdk*"]
+
+[tool.setuptools.package-data]
+glance_sdk = ["bin/*"]

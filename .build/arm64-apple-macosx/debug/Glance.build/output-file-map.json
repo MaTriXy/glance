@@ -1,0 +1,35 @@
+{
+  "": {
+    "swift-dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/master.swiftdeps"
+  },
+  "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/AccessibilityReader.swift": {
+    "dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/AccessibilityReader.d",
+    "object": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/AccessibilityReader.swift.o",
+    "swiftmodule": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/AccessibilityReader~partial.swiftmodule",
+    "swift-dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/AccessibilityReader.swiftdeps"
+  },
+  "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/Glance.swift": {
+    "dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance.d",
+    "object": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance.swift.o",
+    "swiftmodule": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance~partial.swiftmodule",
+    "swift-dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance.swiftdeps"
+  },
+  "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/JSONOutput.swift": {
+    "dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/JSONOutput.d",
+    "object": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/JSONOutput.swift.o",
+    "swiftmodule": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/JSONOutput~partial.swiftmodule",
+    "swift-dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/JSONOutput.swiftdeps"
+  },
+  "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/PromptFormatter.swift": {
+    "dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/PromptFormatter.d",
+    "object": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/PromptFormatter.swift.o",
+    "swiftmodule": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/PromptFormatter~partial.swiftmodule",
+    "swift-dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/PromptFormatter.swiftdeps"
+  },
+  "/Users/rishabhsai/Desktop/sandbox/Glance/Sources/Glance/ScreenState.swift": {
+    "dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/ScreenState.d",
+    "object": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/ScreenState.swift.o",
+    "swiftmodule": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/ScreenState~partial.swiftmodule",
+    "swift-dependencies": "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/ScreenState.swiftdeps"
+  }
+}

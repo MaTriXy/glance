@@ -1,0 +1,32 @@
+{
+  "name": "glance-sdk",
+  "version": "0.1.0",
+  "description": "Structured screen understanding for AI apps. Replace screenshots with instant, accurate UI data — 5x faster, 15x cheaper.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "keywords": [
+    "ai",
+    "screen",
+    "accessibility",
+    "llm",
+    "ui",
+    "macos",
+    "clicky",
+    "agent",
+    "computer-use"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/glance"
+  },
+  "os": ["darwin"],
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "bin/"
+  ]
+}

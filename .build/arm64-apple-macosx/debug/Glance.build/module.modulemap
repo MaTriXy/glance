@@ -1,0 +1,4 @@
+module Glance {
+    header "/Users/rishabhsai/Desktop/sandbox/Glance/.build/arm64-apple-macosx/debug/Glance.build/Glance-Swift.h"
+    requires objc
+}
