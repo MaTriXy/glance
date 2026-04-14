@@ -28,6 +28,21 @@ document.querySelectorAll('.ct').forEach(tab => {
   })
 })
 
+// ---- Output tabs (app examples) ----
+document.querySelectorAll('.ot').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const app = tab.dataset.app
+    const win = tab.closest('.output-window')
+
+    win.querySelectorAll('.ot').forEach(t => t.classList.remove('active'))
+    tab.classList.add('active')
+
+    win.querySelectorAll('.output-body').forEach(b => {
+      b.classList.toggle('hidden', b.dataset.app !== app)
+    })
+  })
+})
+
 // ---- Counting animation ----
 function animateCounters() {
   const counters = document.querySelectorAll('.count')

@@ -32,8 +32,8 @@
     <h1>Your AI doesn't need<br/>to <em>see</em> the screen.</h1>
     <h1 class="hero-h1-alt">It just needs to <em>know</em><br/>what's on it.</h1>
     <p class="hero-p">
-      Glance reads the OS accessibility tree and gives your AI structured data
-      about every UI element — role, label, value, exact pixel coordinates.
+      Glance reads the macOS accessibility tree — the same API VoiceOver uses — and gives your AI
+      structured data about native app UI: buttons, text fields, sliders, their labels, and exact pixel coordinates.
       No screenshots. No vision models. One function call.
     </p>
 
@@ -187,14 +187,66 @@ print(state.elements.first?.center)
   <!-- ============ OUTPUT ============ -->
   <section class="output">
     <h2>What your LLM actually receives</h2>
-    <p class="output-sub">Instead of a 2MB image for the AI to squint at, it gets this:</p>
+    <p class="output-sub">Instead of a 2MB image for the AI to squint at, it gets structured data from the macOS accessibility tree:</p>
 
     <div class="output-window">
       <div class="code-chrome">
         <div class="dots"><i></i><i></i><i></i></div>
-        <span class="ow-label">Glance.screen() → ~480 tokens</span>
+        <div class="output-tabs">
+          <button class="ot active" data-app="terminal">Terminal</button>
+          <button class="ot" data-app="vscode">VS Code</button>
+          <button class="ot" data-app="slack">Slack</button>
+          <button class="ot" data-app="davinci">DaVinci</button>
+        </div>
       </div>
-      <pre class="output-body"><code><span class="oh">[App: DaVinci Resolve 19.1 | Window: "Project 1 - Edit"]</span>
+      <pre class="output-body" data-app="terminal"><code><span class="oh">[App: Ghostty | Window: "~/projects — zsh"]</span>
+
+<span class="os">## Tabs</span>
+<span class="oe">- [Tab] "~/projects" at (120,12) [SELECTED]</span>
+<span class="oe">- [Tab] "npm run dev" at (240,12)</span>
+<span class="oe">- [Button] "+" at (360,12)</span>
+
+<span class="os">## Toolbar</span>
+<span class="oe">- [Button] "Back" at (40,12)</span>
+<span class="oe">- [Button] "Forward" at (70,12)</span>
+<span class="oe">- [PopUpButton] "Profiles" at (420,12)</span>
+
+<span class="os">## Content</span>
+<span class="oe">- [StaticText] "~/projects git:(main)" at (20,80)</span>
+<span class="oe">- [StaticText] "$ glance screen" at (20,100)</span></code></pre>
+      <pre class="output-body hidden" data-app="vscode"><code><span class="oh">[App: Code | Window: "index.ts — my-project"]</span>
+
+<span class="os">## Sidebar</span>
+<span class="oe">- [OutlineRow] "src" at (40,120) [EXPANDED]</span>
+<span class="oe">- [OutlineRow] "index.ts" at (60,145) [SELECTED]</span>
+<span class="oe">- [OutlineRow] "utils.ts" at (60,170)</span>
+
+<span class="os">## Editor Tabs</span>
+<span class="oe">- [Tab] "index.ts" at (280,40) [SELECTED]</span>
+<span class="oe">- [Tab] "package.json" at (380,40)</span>
+
+<span class="os">## Editor</span>
+<span class="oe">- [TextArea] line 42, col 15 at (500,300) [FOCUSED]</span>
+
+<span class="os">## Terminal Panel</span>
+<span class="oe">- [StaticText] "npm run dev" at (280,650)</span>
+<span class="oe">- [StaticText] "Server running on :3000" at (280,670)</span></code></pre>
+      <pre class="output-body hidden" data-app="slack"><code><span class="oh">[App: Slack | Window: "Acme Inc"]</span>
+
+<span class="os">## Channels</span>
+<span class="oe">- [StaticText] "# general" at (40,120)</span>
+<span class="oe">- [StaticText] "# engineering" at (40,150) [SELECTED]</span>
+<span class="oe">- [StaticText] "# random" at (40,180)</span>
+
+<span class="os">## Messages</span>
+<span class="oe">- [Group] "Alice: shipped the fix" at (400,200)</span>
+<span class="oe">- [Group] "Bob: LGTM 🚀" at (400,280)</span>
+<span class="oe">- [Link] "View PR #142" at (420,310)</span>
+
+<span class="os">## Compose</span>
+<span class="oe">- [TextArea] "Message #engineering" at (400,650) [FOCUSED]</span>
+<span class="oe">- [Button] "Send" at (850,650)</span></code></pre>
+      <pre class="output-body hidden" data-app="davinci"><code><span class="oh">[App: DaVinci Resolve | Window: "Project 1 - Edit"]</span>
 
 <span class="os">## Focused</span>
 <span class="oe">- [Slider] "Midtones" value=0.32 at (510,390) [FOCUSED]</span>
@@ -203,20 +255,16 @@ print(state.elements.first?.center)
 <span class="oe">- [Button] "Cut" at (120,42)</span>
 <span class="oe">- [Button] "Color" at (680,42)</span>
 <span class="oe">- [PopUpButton] "Node" value="Corrector 1" at (820,42)</span>
-<span class="oe">- [Button] "Add Node" at (900,42)</span>
 
-<span class="os">## Input Fields</span>
+<span class="os">## Color Wheels</span>
 <span class="oe">- [Slider] "Lift" value=0.15 at (400,380)</span>
 <span class="oe">- [Slider] "Gamma" value=-0.08 at (560,380)</span>
-<span class="oe">- [Slider] "Gain" value=0.22 at (720,380)</span>
-
-<span class="os">## Content</span>
-<span class="oe">- [StaticText] "Timeline: 47 clips" at (960,680)</span></code></pre>
+<span class="oe">- [Slider] "Gain" value=0.22 at (720,380)</span></code></pre>
     </div>
 
     <p class="output-note">
-      The coordinates are exact — from the OS, not estimated from pixels. When your AI says
-      "adjust the Midtones slider" you know it's at <code>(510, 390)</code>. No vision model needed.
+      These are <strong>native macOS apps</strong>, not browser DOM. Glance reads the OS-level accessibility tree —
+      the same data VoiceOver uses. Coordinates are exact, not estimated from pixels.
     </p>
   </section>
 
@@ -448,9 +496,9 @@ state <span class="o">=</span> <span class="f">capture</span>()
         <h3>Diff mode</h3>
         <p>Instead of sending the full screen every time, only send what changed since the last capture. Fewer tokens, faster responses, lower cost.</p>
       </div>
-      <div class="contrib-card">
-        <h3>Your idea</h3>
-        <p>Open an issue, open a PR. This is MIT-licensed and built to be extended. If you're making an AI screen companion, you probably know what's missing better than we do.</p>
+      <div class="contrib-card coming-soon">
+        <h3>OmniParser fallback</h3>
+        <p>For canvas apps, games, and custom-rendered UIs where accessibility trees are sparse — automatically fall back to vision-based parsing. Coming soon.</p>
       </div>
     </div>
   </section>
