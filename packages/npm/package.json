@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/glance"
+    "url": "https://github.com/rishabhsai/glance"
   },
   "os": ["darwin"],
   "engines": {
