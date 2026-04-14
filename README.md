@@ -1,6 +1,9 @@
 # Glance
 
-**Structured screen understanding for AI apps.**
+[![npm version](https://img.shields.io/npm/v/glance-sdk.svg)](https://www.npmjs.com/package/glance-sdk)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**Structured screen understanding for AI apps.** [glance.run](https://glance.run)
 
 Every AI screen companion sends a full 2MB screenshot to a vision model on every interaction. It's slow, expensive, and the AI has to *guess* where UI elements are.
 
@@ -16,7 +19,7 @@ Glance reads the macOS accessibility tree instead — giving your AI structured 
 | **Positions** | AI guesses from pixels | Exact from OS |
 | **Upload** | 2MB image to cloud | Nothing — local text |
 
-Text works great for ~70% of interactions (productivity apps, browsers, dev tools). For canvas apps and games, fall back to screenshots. Your AI doesn't need to *see* the screen most of the time — it just needs to *know* what's on it.
+Text works great for ~45% of interactions (native apps, terminals, editors, Electron apps). For browsers, canvas apps, and games, combine with screenshots. Your AI doesn't need to *see* the screen most of the time — it just needs to *know* what's on it.
 
 ## Install
 
@@ -109,11 +112,11 @@ if (state.elementCount > 5) {
 
 ## What it works with
 
-**Great for** (full element data): Chrome, Safari, Firefox, Arc, VS Code, Cursor, Slack, Discord, Notion, Terminal, all native macOS apps, all Electron apps, web page content
+**Great for** (~45%): VS Code, Cursor, Zed, Xcode, Ghostty, iTerm2, Warp, Terminal, Slack, Discord, Notion, Notes, Mail, Finder, System Settings, all Electron apps
 
-**Partial** (menus and toolbars, not canvas): DaVinci Resolve, Adobe apps, Figma desktop, Blender
+**Partial** (~30%): Browsers (Chrome, Safari, Arc) — toolbar and tabs yes, web content varies by site. DaVinci Resolve, Adobe apps, Figma, Blender — menus yes, canvas no
 
-**Use screenshot fallback**: Games, Canvas/WebGL, remote desktop
+**Use screenshot** (~25%): Games, Canvas/WebGL, deep web page content, remote desktop
 
 ## CLI
 
