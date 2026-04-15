@@ -1,6 +1,7 @@
 # Glance
 
 [![npm version](https://img.shields.io/npm/v/glance-sdk.svg)](https://www.npmjs.com/package/glance-sdk)
+[![PyPI version](https://img.shields.io/pypi/v/glance-sdk.svg)](https://pypi.org/project/glance-sdk/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Structured screen understanding for AI apps.** [glance.run](https://glance.run)
